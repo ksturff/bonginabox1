@@ -36,14 +36,16 @@
             color: black;
             font-size: 24px;
         }
-        .buy-button {
-            background-color: #ff9800;
-            color: black;
+        .shop-button {
+            background-color: black;
+            color: white;
             padding: 15px 30px;
             font-size: 18px;
-            border: none;
+            border: 2px solid white;
             cursor: pointer;
             margin-top: 20px;
+            text-decoration: none;
+            display: inline-block;
         }
     </style>
 </head>
@@ -52,12 +54,13 @@
     <div id="home">
         <img src="Bong in a Box (2).png" alt="Logo" class="logo">
         <div class="video-container">
-    <video width="80%" controls autoplay loop muted>
-        <source src="Bong in a Box (Video) (1).mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
-        <button class="buy-button">Buy Now</button>
+            <video width="80%" controls autoplay loop muted>
+                <source src="Bong in a Box (Video) (1).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <a href="https://bonginabox.com" class="shop-button">Shop Now</a>
     </div>
 </body>
 </html>
+
