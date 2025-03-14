@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glow Globe Bong</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+        }
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .buy-button, .customize-button {
+            background-color: #ff9800;
+            color: black;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .product-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+        .product-gallery img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Homepage -->
+    <div id="home">
+        <img src="logo.png" alt="Glow Globe Bong Logo" class="logo">
+        <div class="video-container">
+            <video width="80%" autoplay loop muted>
+                <source src="your-video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <button class="buy-button" onclick="window.location.href='shop.html'">Buy Now</button>
+    </div>
+
+    <!-- Product Page (shop.html) -->
+    <div id="shop" style="display: none;">
+        <h1>Choose Your Glow Globe Bong</h1>
+        <div class="product-gallery">
+            <img src="product1.jpg" alt="Product 1">
+            <img src="product2.jpg" alt="Product 2">
+            <img src="product3.jpg" alt="Product 3">
+            <img src="product4.jpg" alt="Product 4">
+            <img src="product5.jpg" alt="Product 5">
+            <img src="product6.jpg" alt="Product 6">
+        </div>
+        <button class="customize-button" onclick="alert('Customization coming soon!')">Customize</button>
+    </div>
+</body>
+</html>
