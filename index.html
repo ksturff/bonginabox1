@@ -10,41 +10,52 @@
             padding: 0;
             background-color: black;
             color: white;
-            text-align: center;
             font-family: Arial, sans-serif;
         }
+
         .logo {
             position: absolute;
             top: 10px;
             left: 10px;
-            width: 100px;
+            width: 200px; /* Doubled from 100px to 200px */
             height: auto;
         }
+
         .image-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 80vh;
+            height: 100vh;
         }
+
         .product-image {
-            width: 80%; /* Adjust width as needed */
+            width: 80%;
             height: auto;
         }
+
         .shop-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
             background-color: black;
             color: white;
             padding: 15px 30px;
             font-size: 18px;
             border: 2px solid white;
             cursor: pointer;
-            margin-top: 20px;
             text-decoration: none;
             display: inline-block;
+            z-index: 1000;
+        }
+
+        .shop-button:hover {
+            background-color: white;
+            color: black;
+            transition: 0.3s;
         }
     </style>
 </head>
 <body>
-    <!-- Homepage -->
     <div id="home">
         <img src="Bong in a Box (2).png" alt="Logo" class="logo">
         <div class="image-container">
