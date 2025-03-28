@@ -1,67 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Glow Globe Bong</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Glow Globe Bong – Motion Sensor LED water pipe with glow-in-the-dark ashtray. Shop now at Bong in a Box." />
+  <title>Glow Globe Bong | Bong in a Box</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
 
-        .logo {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            width: 200px; /* Doubled from 100px to 200px */
-            height: auto;
-        }
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
 
-        .image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
+    .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 200px;
+      height: auto;
+      filter: drop-shadow(0 0 5px rgba(255,255,255,0.7));
+      z-index: 10;
+    }
 
-        .product-image {
-            width: 80%;
-            height: auto;
-        }
+    .tagline {
+      position: absolute;
+      top: 240px;
+      left: 20px;
+      font-size: 1.25rem;
+      color: rgba(255,255,255,0.8);
+      text-shadow: 0 0 8px rgba(0,255,255,0.5);
+      z-index: 9;
+    }
 
-        .shop-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: black;
-            color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            border: 2px solid white;
-            cursor: pointer;
-            text-decoration: none;
-            display: inline-block;
-            z-index: 1000;
-        }
+    .image-container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
 
-        .shop-button:hover {
-            background-color: white;
-            color: black;
-            transition: 0.3s;
-        }
-    </style>
+    .product-image {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .shop-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      padding: 15px 30px;
+      font-size: 18px;
+      border: 2px solid white;
+      cursor: pointer;
+      text-decoration: none;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      transition: all 0.3s ease;
+    }
+
+    .shop-button:hover {
+      background-color: white;
+      color: black;
+      box-shadow: 0 0 25px rgba(255, 255, 255, 0.9);
+    }
+
+    @media screen and (max-width: 768px) {
+      .logo {
+        width: 140px;
+      }
+
+      .tagline {
+        top: 180px;
+        font-size: 1rem;
+        left: 15px;
+      }
+
+      .shop-button {
+        padding: 12px 24px;
+        font-size: 16px;
+        bottom: 15px;
+        right: 15px;
+      }
+
+      .product-image {
+        width: 100%;
+      }
+    }
+  </style>
 </head>
+
 <body>
-    <div id="home">
-        <img src="Bong in a Box (2).png" alt="Logo" class="logo">
-        <div class="image-container">
-            <img src="glowbongs.png" alt="Glow Globe Bong" class="product-image">
-        </div>
-        <a href="https://bonginabox.myshopify.com/products/glowglobe-bong-motion-sensor-led-bong-with-glow-in-the-dark-ashtray-customizable-glass-water-pipe" class="shop-button">Shop Now</a>
+  <div id="home">
+    <img src="Bong in a Box (2).png" alt="Logo" class="logo" />
+    <div class="tagline">Glow Up Your Session 🌍</div>
+
+    <div class="image-container">
+      <img src="glowbongs.png" alt="Glow Globe Bong" class="product-image" />
     </div>
+
+    <a
+      href="https://bonginabox.myshopify.com/products/glowglobe-bong-motion-sensor-led-bong-with-glow-in-the-dark-ashtray-customizable-glass-water-pipe"
+      class="shop-button"
+      >Shop Now</a
+    >
+  </div>
 </body>
 </html>
